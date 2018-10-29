@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>t.js</title>
+        <link rel="stylesheet" href="master.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="t.min.js" ></script>
+    </head>
+    <body>
+
+        <pre id="main">
+NumPoet<ins><span id="pow-txt">---[FullStack Software Developer]</span></ins>
+<span id="tagline"> Escribo  estos  tutoriales   para  compartir   conocimiento<br>y  experiencia en  el ramo de las ciencias de la computación<ins>1.5</ins><br>escribiendo el mensaje de vida<br>!!sal de la caja bro!!</span><del></del><del id="pow-trigger"></del>\\</pre>
+        <script type="text/javascript">
+
+        //Pow!
+
+        $('#main').t({
+         beep:true,
+         caret:'<span style="color:green;">♪♪</span>',
+         typing:function(elm,chr){
+
+           if(chr.match(/\-trigger/))
+             $('#pow-txt').show().delay(20000).fadeOut(0);
+
+         }
+        });
+
+        </script>
+    </body>
+</html>
